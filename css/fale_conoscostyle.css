@@ -1,0 +1,55 @@
+body{
+	background-color: #00BFFF;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 1px dotted gray;
+	border-radius: 1em;
+	padding: 10px;
+	font-family: sans-serif;
+}
+
+h1{
+	text-align: center;
+}
+form{
+	margin: auto;
+	width: 600px;
+	padding: 10px;
+	border-radius: 1em;
+}
+
+div{
+	margin-top: 2px;
+}
+
+.divInput{
+	width: 250px;
+	text-align: center;
+}
+
+input{
+	width: 100%;
+}
+
+input, textarea{
+	font-size: 1em;
+	border: 1px solid #999;
+}
+
+input:focus, textarea:focus{
+	border-color: #000;
+}
+
+textarea{
+	height: 80px;
+	width: 500px;
+}
+
+.botao{
+	padding-right: 100px;
+	text-align: right;
+}
+button{
+	margin-left: .2em;
+	border-radius: 1em;
+}

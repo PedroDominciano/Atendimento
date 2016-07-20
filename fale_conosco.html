@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Fale Conosco - Mudda</title>
+		<meta charset="utf-8"/>
+		<link rel = "stylesheet" type = "text/css" href = "css/fale_conoscostyle.css" />
+	</head>
+	<body>
+		<h1>Preencha o formulário</h1>
+		<form action = "mailto:pedro82_cb2@hotmail.com" id="formulario">
+			<div class = "divInput">
+				<input type = "text" name="nome" placeholder = "Nome..." />
+			</div>
+			<div class = "divInput">
+				<input type = "text" name="sobrenome" placeholder = "Sobrenome..." />
+			</div>
+			<div class = "divInput">
+				<input type = "text" name="email" id="email" placeholder = "Email..." />
+			</div>
+			<div class = "divInput">
+				<input type = "text" name="ass" placeholder = "Assunto..." />
+			</div>
+			<div class = "divTextArea">
+				<textarea name="campo" placeholder = "Mensagem..." ></textarea>
+			</div>
+			<div class = "botao">
+				<button type = "submit" onclick="verificar()">Enviar</button>
+			</div>
+		</form>
+		
+		<script src="js/verify.js"></script>
+	</body>
+
+
+</html>

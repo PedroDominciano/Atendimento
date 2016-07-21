@@ -23,18 +23,18 @@ function valida_nomes(formulario){
 	var sobreNome = formulario.sobrenome.value;
 	var assunto = formulario.ass.value;
 	if(!regex.test(nome)){
-		alert("Favor verificar o nome");
-		document.getElementById("inp-nome").value='';
-		document.getElementById("inp-nome").style.backgroundColor = "#FF6666";
+		show_error(formulario.nome);
 	}
 	if(!regex.test(sobreNome)){
-		alert("Favor verificar o Sobrenome");
-		document.getElementById("inp-sobreNome").value='';
-		document.getElementById("inp-sobreNome").style.backgroundColor = "#FF6666";
+		show_error(formulario.sobrenome);
 	}
 	if(!regex.test(assunto)){
-		alert("Favor verificar o Assunto");
-		document.getElementById("inp-ass").value='';
-		document.getElementById("inp-ass").style.backgroundColor = "#FF6666";
+		show_error(formulario.ass);
 	}
+}
+
+function show_error(campo){
+	var id = campo.id;
+	document.getElementById(id).value='';
+	document.getElementById(id).style.backgroundColor = "#FF6666";
 }
